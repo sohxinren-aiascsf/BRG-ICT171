@@ -58,31 +58,95 @@ hostname displays my machine’s name. sudo hostnamectl set-hostname, adding a c
 ![alt text](<15. process monitoring.png>)  
 Monitor processes using ps -e (ps = process, e = everything).  
 
+![alt text](<16. top command.png>)  
+top command shows real-time system performance and running processes in the terminal that continuously refreshes screen at every 3 seconds interval instead of a snapshot like ps -e. I can quit with ‘q’, ‘p’ to sort by CPU memory, ‘k’ to kill processes by PID. Toggling ‘1’ switches between the number of CPU usage, when I created the VM with 4 CPUs, I can see Cpu0 – 3.  
 
+![alt text](<17. list command.png>)  
+ls with -xx is similar to the earlier setup to list files, different functions such as -la (long listing + all entries), -alt (all files, including hidden + long format + sort by time), -lah (long listing + all entries + human-readable sizes (KB/MB/GB instead of raw bytes)) provides different options in a chronological order.  
 
+![alt text](<18. touch command.png>)  
+Create new file using ‘touch’  
 
+![alt text](<19. gedit command.png>)  
+gedit command to open graphical text editor  
 
+![alt text](<20. nano command.png>)  
+nano command for GUI editor without full IDE  
 
+![alt text](<21. cat command.png>)  
+cat command reads files and writes them to my terminal  
 
+![alt text](<22. less command.png>)  
+Screenshot 13: less command to reading and exploring longer files which require scrolling  
+gedit = GUI editor (editable)  
+nano = text editor (editable)  
+cat = quick glances at short files (view only)  
+less = reading and exploring longer files while scrolling (view only)  
 
+![alt text](<23. copy command.png>)
+copy command  
 
+![alt text](<24. move command.png>)  
+Explored various move commands, I moved testfilebackup to Downloads folder, renamed testfilebackup to filetestbackup, attempted to rename Downloads folder but realized I was in the wrong directory, need to go back up one level before I can rename the folder to MyDownloads.  
 
+![alt text](<31. remove file.png>)  
+Removed the filetestbackup file
 
+![alt text](<25. view system info command.png>)  
+uname -a displays basic system info with all fields in one line to know the kernel version quickly.  
+lsb-release -a displays Linux Standard Base and distribution specific information with all fields to know which distro and version.  
+hostnamectl displays hostname information for a more detailed OS summary snapshot for the VM.  
 
+![alt text](<26. whoami and superuser command.png>)  
+whoami command and super user privilege escalation  
 
+![alt text](<27. add new user.png>)  
+Attempted to add a new user but failed because I am not in the root privilege. This shows that user management is restricted to root-level privileges. sudo is a controlled mechanism for temporarily escalating a normal account to perform administrative tasks.  
 
+![alt text](<28. identify private IP.png>)  
+Identify private IP address  
 
+![alt text](<29. ping test.png>)  
+ping local device ensures my NIC is serviceable.  
+ping 8.8.8.8 tests raw IP connectivity to Google’s DNS server.  
+ping google.com tests if my system have any DNS issues.  
 
-
-
-
-
-
-
-
-
-
+![alt text](<30. create new alias and ping test.png>)  
+Create new alias for googledns and perform ping test  
 
 ![nslookup](<32. nslookup google.png>)  
 nslookup query DNS and show which IP address google.com resolves to, and which DNS server answered
+
+![alt text](<33. whois google.png>)  
+sudo apt install whois installs the whois client on to query domain registration records
+whois google.com asks WHOIS registries for information about the google.com domain  
+
+nslookup = DNS records  
+whois = ownership/registration  
+
+![alt text](<34. list usb and pci.png>)  
+Lists USB buses and connected USB devices such as keyboard, mouse, webcam.  
+Lists PCI devices such as network cards, storage controllers, graphics adapters, etc, useful to see what virtual hardware VirtualBox is emulating.  
+
+![alt text](<36. cpu info command.png>)  
+scroll through detailed CPU information: model, cores, threads, cache sizes, flags
+
+![alt text](<35. redirecting output to a file.png>)  
+lsusb > output_of_lsusb run lsusb, create a file with the outputs  
+less output_of_lsusb opens the file in a scrollable page  
+cat output_of_lsusb displays the entire file in the terminal  
+ls -la output_of_lsusb shows file metadata: permissions, owner, size, timestamps, and confirms the file exists and how big it is  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
