@@ -135,18 +135,30 @@ scroll through detailed CPU information: model, cores, threads, cache sizes, fla
 lsusb > output_of_lsusb run lsusb, create a file with the outputs  
 less output_of_lsusb opens the file in a scrollable page  
 cat output_of_lsusb displays the entire file in the terminal  
-ls -la output_of_lsusb shows file metadata: permissions, owner, size, timestamps, and confirms the file exists and how big it is  
+ls -la output_of_lsusb shows file metadata: permissions, owner, size, timestamps, and confirms the file exists and how big it is.  
 
+![alt text](<38. sudo apt search keyword.png>)  
+sudo apt search keyword vlc  
 
+![alt text](<39. sudo apt install vlc.png>)  
+install vlc via the keyword search earlier  
+instead of searching the web to download and install the correct compatible version, using this CLI command searches the apt repository for installing. very nice indeed!  
 
+![alt text](<40. hello world executable.png>)  
+after installing build-essential meta-package which includes gcc, g++, core development headers and libraries, compile the c program "Hello World!", then ./hello_world_executable tells the shell to run in the current directory, printing it out in the terminal.  
 
+![alt text](<41. less hello_world.png>)  
+opens the c program in less for scrolling  
 
+![alt text](<42. less hello_world_executable.png>)  
+opens the compiled binary file but mostly unreadable characters because it is machine code, not text.  
+This exercise shows me the difference between human-readable .c file vs binary executable.  
 
+In this Session, I tried several ways of distributing and installing software. From using package managers (apt), direct downloads, compiling from source, and ISO images.  
 
+As a user, apt felt the most convenient and safest because dependencies and updates are handled for me in a single command. Direct downloads are useful when I need a newer version than the repo provides, but I have to think more about trust and manual updates from offical websites.  
 
+Compiling from source with gcc was the unique, but it gave me a clear understanding of what is actually being built, which is valuable as a IT student.  
+Using Ubuntu ISO image on my VirtualBox make it easy to get a complete, reproducible environment for labs without risking my host OS.
 
-
-
-
-
-
+From a software company’s perspective, I can see why they often mix approaches. Package managers and prebuilt images reduce friction for users and support, while direct downloads and source give them more control over release timing, licensing, and community contributions. Each method trades off convenience, security, control, and maintenance effort on both sides.
