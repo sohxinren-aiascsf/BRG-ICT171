@@ -154,6 +154,7 @@ opens the c program in less for scrolling
 opens the compiled binary file but mostly unreadable characters because it is machine code, not text.  
 This exercise shows me the difference between human-readable .c file vs binary executable.  
 
+# Reflection
 In this Session, I tried several ways of distributing and installing software. From using package managers (apt), direct downloads, compiling from source, and ISO images.  
 
 As a user, apt felt the most convenient and safest because dependencies and updates are handled for me in a single command. Direct downloads are useful when I need a newer version than the repo provides, but I have to think more about trust and manual updates from offical websites.  
